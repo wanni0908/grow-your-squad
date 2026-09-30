@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grow Your Squad</title>
+
+  <style>
+    #game{
+      width:400px;
+      height:600px;
+      border:3px solid black;
+    }
+    #player{
+      width:40px;
+      height:40px;
+      background:blue;
+    }
+    </style>
+  
+</head>
+<body>
+<h1>GROW YOUR SQUAD</h1>
+<div id="game">
+</div>
+  <script>
+const game = document.getElementById("game")
+let player = document.createElement("div")
+player.id = "player";
+game.appendChild(player);
+</body>
+</html>
