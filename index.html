@@ -28,6 +28,20 @@ player.id = "player";
 game.appendChild(player);
     let x = 0;
     let y = 0;
+    let squad = 1;
+    let squadText = document.createElement("div");
+    squadText.innerText = "Squad: " + squad;
+    game.appendChild(squadText);
+    let friend = document.createElement("div");
+    friend.innerText = "+1";
+    friend.style.position = "absolute";
+    friend.style.left = "180px";
+    friend.style.top = "100px";
+    game.appendChild(friend);
+    friend.addEventListener("click", function(){
+      squad += 1;
+      squadText.innerText = "Squad : " + squad;
+    });
 document.addEventListener("keydown", function(event) {
     if (event.key === "ArrowRight") x += 10;
     if (event.key === "ArrowLeft") x -= 10;
